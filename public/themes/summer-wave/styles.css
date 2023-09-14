@@ -1,0 +1,33 @@
+:root {
+  --accent-color: #ff8b1f;
+  --text-color: #ff8b1f;
+  --text-hover: #fc6413;
+}
+
+.main {
+  .bg {
+    background-color: #f00;
+    background-image: radial-gradient(at 40% 20%, hsla(49, 100%, 55%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgb(83, 79, 199) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(339, 100%, 58%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, hsla(340, 66%, 70%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(296, 100%, 57%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, rgb(31, 65, 255) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(343, 61%, 60%, 1) 0px, transparent 50%);
+    box-shadow: 0 0 2rem var(--accent-color);
+  }
+  .bg::after,
+  .bg::before {
+    content: '';
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    background: inherit;
+    background-size: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: inherit;
+    animation: inherit;
+    filter: inherit;
+  }
+}

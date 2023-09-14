@@ -1,0 +1,25 @@
+.dropdown__button {
+  > button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+
+    color: var(--text-base);
+    width: 100%;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  > button.active {
+    pointer-events: none;
+    color: var(--text-color);
+  }
+  > button:hover {
+    color: var(--text-hover);
+  }
+  > button:active {
+    color: var(--text-active);
+  }
+}

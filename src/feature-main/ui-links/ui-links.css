@@ -1,0 +1,30 @@
+.link-viewer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 0.25rem;
+  margin-left: 1.5rem;
+  color: var(--text-base);
+  font-size: 1.25rem;
+  font-weight: 100;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 42.5rem;
+
+  > h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  > li > a {
+    text-decoration: none;
+    color: var(--text-base);
+  }
+  > li > a:hover {
+    color: var(--text-hover);
+  }
+  > li > a:active {
+    color: var(--text-active);
+  }
+}

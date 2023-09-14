@@ -1,0 +1,27 @@
+:root {
+  --accent-color: #9900f0;
+  --text-color: #a460ed;
+  --text-hover: #31e1f7;
+}
+
+.main {
+  .bg {
+    background: none;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 2.5rem var(--accent-color);
+  }
+  .bg::after,
+  .bg::before {
+    content: '';
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    background: inherit;
+    background-size: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: inherit;
+    animation: inherit;
+    filter: inherit;
+  }
+}

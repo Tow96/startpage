@@ -1,0 +1,32 @@
+:root {
+  --accent-color: rgba(209, 102, 255, 0.656);
+  --text-color: rgba(212, 20, 255, 0.992);
+  --text-hover: rgba(145, 34, 196, 1);
+}
+
+.main {
+  .bg {
+    background-image: radial-gradient(at 40% 20%, hsla(240, 75%, 61%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(189, 80%, 49%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, hsla(340, 66%, 70%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(233, 66%, 60%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, hsla(343, 61%, 60%, 1) 0px, transparent 50%);
+    box-shadow: 0px 0px 30px var(--accent-color);
+  }
+  .bg::after,
+  .bg::before {
+    content: '';
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    background: inherit;
+    background-size: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: inherit;
+    animation: inherit;
+    filter: inherit;
+  }
+}

@@ -1,0 +1,65 @@
+:root {
+  --accent-color: #fd86b6;
+  --text-color: #01e1ff;
+  --text-hover: #ff05ac;
+}
+
+.main {
+  .bg {
+    background: linear-gradient(
+      45deg,
+      #fb0094,
+      #00bfff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #00ffb7,
+      #00f7ff,
+      #ffff00,
+      #ff0000
+    );
+    animation: steam 20s linear infinite;
+    box-shadow: 0 0 1rem var(--accent-color);
+  }
+  .bg::before,
+  .bg::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      45deg,
+      #fb0094,
+      #00bfff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #00ffb7,
+      #00f7ff,
+      #ffff00,
+      #ff0000
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 70s linear infinite;
+  }
+  .bg:after {
+    filter: blur(50px);
+  }
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

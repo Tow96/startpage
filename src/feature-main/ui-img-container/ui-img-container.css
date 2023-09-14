@@ -1,0 +1,9 @@
+.image__container {
+  width: 25rem;
+  > img {
+    height: 42.5rem;
+    width: 100%;
+    padding: 1rem 0 0 0.8rem;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,42 @@
+/* TODO: Mobile mode */
+:root {
+  --text-base: aliceblue;
+  --text-active: #aaa;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  .bg {
+    position: fixed;
+    width: 44rem;
+    margin-left: -5rem;
+    top: 10rem;
+
+    height: 43rem;
+    margin-top: -5.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(35, 35, 35, 0.9);
+    box-shadow: 0 0 2.5rem #000;
+    height: 50rem;
+    width: 44rem;
+    margin-top: 1.5rem;
+    z-index: 10;
+
+    .content {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .search > form {
+      color: var(--text-color);
+    }
+  }
+}
