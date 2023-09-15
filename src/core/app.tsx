@@ -1,7 +1,7 @@
 import MainScreen from '../feature-main/_shell';
 import Navbar from '../feature-navbar/_shell';
 
-import './App.css';
+import './app.css';
 
 function App() {
   return (
